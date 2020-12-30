@@ -69,9 +69,7 @@ var (
 	nvidiaVisibleDevices = "NVIDIA_VISIBLE_DEVICES"
 )
 
-const (
-	dockerLabelAllocID = "com.hashicorp.nomad.alloc_id"
-)
+var DockerLabelAllocID = "com.hashicorp.nomad.alloc_id"
 
 type Driver struct {
 	// eventer is used to handle multiplexing of TaskEvents calls such that an

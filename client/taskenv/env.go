@@ -16,7 +16,7 @@ import (
 )
 
 // A set of environment variables that are exported by each driver.
-const (
+var (
 	// AllocDir is the environment variable with the path to the alloc directory
 	// that is shared across tasks within a task group.
 	AllocDir = "NOMAD_ALLOC_DIR"
